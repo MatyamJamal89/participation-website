@@ -1,0 +1,14 @@
+@import "../../node_modules/bulma-rtl/sass/utilities/initial-variables.sass";
+@import "../../node_modules/bulma-rtl/sass/utilities/functions.sass";
+
+$blue: #1c3858;
+$primary: $blue;
+$link: $blue;
+
+@import "../../node_modules/bulma-rtl/bulma-rtl.sass";
+
+.logo {
+    width:200px;
+    height: auto;
+    max-height: inherit !important;
+}
