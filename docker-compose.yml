@@ -1,0 +1,22 @@
+version: "3"
+services:
+  app:
+    build: .
+    depends_on:
+      - db
+    volumes:
+      - ".:/app:cached"
+    ports:
+      - "3000:3000"
+    command: sh -c "sequelize db:migrate && sequelize db:seed:all && npm start-dev"
+    env_file:
+      - "docker.env"
+  db:
+    image: postgres:11.1-alpine
+    volumes:
+      - "db_volume:/var/lib/postgresql/data"
+    ports:
+      - 5432:5432
+
+volumes:
+  db_volume:
