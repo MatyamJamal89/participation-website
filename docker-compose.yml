@@ -9,8 +9,6 @@ services:
     ports:
       - "3000:3000"
     command: sh -c "sequelize db:migrate && sequelize db:seed:all && npm run dev"
-    env_file:
-      - "docker.env"
   db:
     image: postgres:11.1-alpine
     volumes:
