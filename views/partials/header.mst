@@ -1,0 +1,17 @@
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="/">
+      <div class="logo">
+      </div>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <a class="logout">
+          تسجيل الخروج
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>

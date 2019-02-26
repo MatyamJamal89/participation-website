@@ -1,0 +1,32 @@
+<aside class="menu">
+  <ul class="menu-list">
+    <li>
+      <span class="icon">
+        <a>
+          <i class="fas fa-tachometer-alt"></i>
+        </a>
+      </span>
+    </li>
+    <li>
+      <span class="icon">
+        <a>
+          <i class="fas fa-folder"></i>
+        </a>
+      </span>
+    </li>
+    <li>
+      <span class="icon">
+        <a href="/users">
+          <i class="fas fa-users"></i>
+        </a>
+      </span>
+    </li>
+    <li>
+      <span class="icon">
+        <a>
+          <i class="fas fa-cog"></i>
+        </a>
+      </span>
+    </li>
+  </ul>
+</aside>
