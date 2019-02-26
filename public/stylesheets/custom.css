@@ -1,0 +1,92 @@
+body {
+    font-family: Tajawal;
+    background: #fafbfc;
+}
+
+.container.is-fluid {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.content {
+    margin-top: 32px !important;
+}
+
+.sub-navbar-menu {
+    margin-left: 32px;
+}
+
+.content .title {
+    width: 318px;
+    height: 34px;
+    font-size: 21px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: right;
+    color: #1a173b;
+}
+
+.sub-content {
+    border-radius: 3.8px;
+    background-color: #ffffff;
+    margin-left: 32px;
+    padding:33px;
+}
+
+
+.logout {
+    height: 19px;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #dc385a;
+}
+
+.navbar {
+    background: white;
+    height: 70px;
+    padding: 0px 66px;
+    padding-right: 26px;
+}
+
+a.navbar-item {
+    margin-left: 90px;
+}
+
+a.navbar-item:hover {
+    background: white;
+    border-bottom: 2px solid #193f6b;
+}
+
+.menu {
+    background: white;
+    text-align: center;
+    padding-top: 78px;
+    width:89px;
+}
+
+.logo {
+    width: 36px;
+    height: 36px;
+    background-color: #1c3858;
+    border-radius: 50%;
+}
+
+.icon {
+    color: #1c3858;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.icon i {
+    font-size: 21pt;
+}
