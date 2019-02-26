@@ -4,6 +4,7 @@ const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const mustacheExpress = require('mustache-express');
+const passport = require('passport');
 const session = require('express-session');
 const bodyParser = require('body-parser');
 const flash = require('connect-flash');
@@ -27,6 +28,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
+// For Passport
 
 app.use(session({
   secret: 'keyboard cat',
@@ -35,6 +37,9 @@ app.use(session({
 }));
 
 app.use(flash());
+
+app.use(passport.initialize());
+app.use(passport.session());
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
