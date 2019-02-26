@@ -1,11 +1,23 @@
+* {
+    font-family: Tajawal !important;
+}
+html {
+    height: 100%;
+}
 body {
     font-family: Tajawal;
     background: #fafbfc;
+    height: 100%;
 }
 
 .container.is-fluid {
     margin-left: 0px;
     margin-right: 0px;
+    height: 100%;
+}
+
+.columns {
+    height: 100%;
 }
 
 .content {
@@ -89,4 +101,36 @@ a.navbar-item:hover {
 
 .icon i {
     font-size: 21pt;
+}
+
+.signin {
+    text-align: center;
+}
+
+.signin img {
+    width: 119px;
+    height: 168px;
+    object-fit: contain;
+    margin-bottom: 28px;
+}
+
+.signin h2 {
+    height: 35px;
+    font-size: 22.8px;
+    color: #444444;
+    margin-bottom: 28px;
+}
+
+.signin-form {
+    vertical-align: middle;
+    margin: 25% 10% 0px;
+    width:75%;
+}
+
+.signin-bg {
+    background-image: url('../images/signin-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
 }
