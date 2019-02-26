@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html>
+
+{{> partials/head }}
+
+<body>
+  <div class="container is-fluid users">
+    <div class="columns is-gapless is-multiline">
+      <div class="column is-full">
+        {{> partials/header }}
+      </div>
+      <div class="column is-1">
+        {{> partials/nav }}
+      </div>
+      <div class="column content">
+        <h2 class="title">
+          {{title}}
+        </h2>
+        <div class="sub-content">
+          <div class="alert" role="alert">
+            <ul>
+              {{#errors}}
+              <li>{{.}}</li>
+              {{/errors}}
+            </ul>
+          </div>
+          <form id="signin" name="signin" method="post" action="/users/signin">
+            <div class="field">
+              <label class="label">البريد الالكتروني</label>
+              <div class="control">
+                <input class="input" type="email" name="email" placeholder="البريد الالكتروني" required>
+              </div>
+            </div>
+            <div class="field">
+              <label class="label">كلمة السرّ</label>
+              <div class="control">
+                <input class="input" type="password" name="password" placeholder="كلمة السرّ" required>
+              </div>
+            </div>
+            <div class="field is-grouped">
+              <div class="control">
+                <input class="button is-link" type="submit" value="تسجيل الدخول" />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+{{> partials/head }}
+
+<body>
+  <div class="container is-fluid users">
+    <div class="columns is-gapless is-multiline">
+      <div class="column is-full">
+        {{> partials/header }}
+      </div>
+      <div class="column is-1">
+        {{> partials/nav }}
+      </div>
+      <div class="column content">
+        <div class="navbar-menu sub-navbar-menu">
+          <div class="navbar-start">
+            <h2 class="title">
+              مستخدمي النظام
+            </h2>
+          </div>
+
+          <div class="navbar-end">
+              <a class="button is-link" href="/users/new">
+                إضافة مستخدم
+              </a>
+          </div>
+        </div>
+        <div class="sub-content">
+          {{#messages}}
+            <li>{{.}}</li>
+          {{/messages}}
+          <table>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
