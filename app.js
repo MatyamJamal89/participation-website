@@ -41,6 +41,13 @@ app.use(flash());
 app.use(passport.initialize());
 app.use(passport.session());
 
+app.use(function (req, res, next) {
+  if (req.isAuthenticated() || req.path == "/users/signin" || req.path == "/test")
+    next();
+  else
+    res.redirect('/users/signin');
+});
+
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
