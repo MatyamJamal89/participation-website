@@ -4,9 +4,13 @@ const User = require('../models').User;
 
 module.exports = {
   index(req, res) {
-    res.render('users/index', {
-      title: "مستخدمي النّظام",
-      messages: req.flash()['messages'],
+    User.findAll().then((users) => {
+      console.log(users);
+      res.render('users/index', {
+        users: users,
+        title: "مستخدمي النّظام",
+        messages: req.flash()['messages'],
+      })
     });
   },
   new(req, res) {

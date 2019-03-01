@@ -31,6 +31,18 @@
             <li>{{.}}</li>
           {{/messages}}
           <table>
+            <th>البريد الالكتروني</th>
+            <th>الاسم</th>
+            <th>الرابطة</th>
+            <th>الدور</th>
+            {{#users}}
+              <tr>
+                <td>{{email}}</td>
+                <td>{{name}}</td>
+                <td>{{association}}</td>
+                <td>{{role}}</td>
+              </tr>
+            {{/users}}
           </table>
         </div>
       </div>
