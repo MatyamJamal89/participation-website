@@ -8,6 +8,7 @@
   <div class="navbar-menu">
     <div class="navbar-end">
       <div class="navbar-item">
+        {{! TODO: Add logout functionality }}
         <a class="logout">
           تسجيل الخروج
         </a>
