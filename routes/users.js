@@ -1,12 +1,10 @@
 const express = require('express');
-const bCrypt = require('bcrypt-nodejs');
 
 const router = express.Router();
 const usersController = require('../controllers').users;
 
 const User = require('../models').User;
 const passport = require('passport');
-
 require('../config/passport.js')(passport, User);
 
 router.get('/', usersController.index);
