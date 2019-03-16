@@ -43,6 +43,7 @@ body {
 }
 
 .sub-content {
+    border: 1px solid #ebedf8;
     border-radius: 3.8px;
     background-color: #ffffff;
     margin-left: 32px;
