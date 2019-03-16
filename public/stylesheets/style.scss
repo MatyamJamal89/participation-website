@@ -6,6 +6,7 @@ $primary: $blue;
 $link: $blue;
 
 @import "../../node_modules/bulma-rtl/bulma-rtl.sass";
+@import '../../node_modules/bulma-tooltip/dist/css/bulma-tooltip.sass';
 
 .logo {
     width:200px;
