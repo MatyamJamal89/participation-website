@@ -1,29 +1,29 @@
 <aside class="menu">
   <ul class="menu-list">
-    <li>
+    {{! <li>
       <span class="icon">
-        <a>
+        <a >
           <i class="fas fa-tachometer-alt"></i>
         </a>
       </span>
-    </li>
+    </li> }}
     <li>
       <span class="icon">
-        <a>
-          <i class="fas fa-folder"></i>
+        <a href="/associations" class="tooltip" data-tooltip="الرّابطات">
+          <i class="fas fa-folder" ></i>
         </a>
       </span>
     </li>
     <li>
       <span class="icon">
-        <a href="/users">
+        <a href="/users" class="tooltip" data-tooltip="الأعضاء">
           <i class="fas fa-users"></i>
         </a>
       </span>
     </li>
     <li>
       <span class="icon">
-        <a>
+        <a class="tooltip" data-tooltip="الإعدادات">
           <i class="fas fa-cog"></i>
         </a>
       </span>
