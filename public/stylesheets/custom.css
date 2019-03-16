@@ -50,6 +50,11 @@ body {
     padding:33px;
 }
 
+table th {
+    color: #b4bac6 !important;
+    font-size: 12px;
+}
+
 
 .logout {
     height: 19px;
