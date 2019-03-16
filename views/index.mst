@@ -4,10 +4,10 @@
 {{> partials/head }}
 
 <body>
-  <div class="container is-fluid home">
+  <div class="container is-fluid">
     <div class="columns is-gapless is-multiline">
       <div class="column is-full">
-        {{> partials/home-header }}
+        {{> partials/header }}
       </div>
       <div class="column is-1">
         {{> partials/nav }}
@@ -17,7 +17,16 @@
           الرئيسية
         </h2>
         <div class="sub-content">
-          <table>
+          <h2 class="title">
+            المشتركات
+          </h2>
+          <table class="participants">
+            <th>الاسم</th>
+            <th>رقم الهاتف</th>
+            <th>البريد الالكتروني</th>
+            <th>تاريخ الميلاد</th>
+            <th>التخصّص</th>
+            <th>الرّابطة</th>
           </table>
         </div>
       </div>
