@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+{{> partials/head }}
+
+<body>
+  <div class="container is-fluid">
+    <div class="columns is-gapless is-multiline">
+      <div class="column is-full">
+        {{> partials/header }}
+      </div>
+      <div class="column is-1">
+        {{> partials/nav }}
+      </div>
+      <div class="column content">
+        <div class="navbar-menu sub-navbar-menu">
+          <div class="navbar-start">
+            <h2 class="title">
+              {{association.name}}
+            </h2>
+          </div>
+
+          <div class="navbar-end">
+            <a class="button is-link" href="/seasons/associations/{{association.id}}/new">
+              إضافة موسم
+            </a>
+        </div>
+        </div>
+        <div class="sub-content">
+          <ol>
+            {{#association.Seasons}}
+              <li>
+                <a href="/seasons/{{id}}">
+                  {{name}}
+                </a>
+              </li>
+            {{/association.Seasons}}
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

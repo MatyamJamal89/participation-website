@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html>
+
+{{> partials/head }}
+
+<body>
+  <div class="container is-fluid">
+    <div class="columns is-gapless is-multiline">
+      <div class="column is-full">
+        {{> partials/header }}
+      </div>
+      <div class="column is-1">
+        {{> partials/nav }}
+      </div>
+      <div class="column content">
+        <h2 class="title">
+          {{title}}
+        </h2>
+        <div class="sub-content">
+          <form id="add" name="add" method="post" action="/associations/create">
+            <div class="field">
+              <label class="label">الاسم</label>
+              <div class="control">
+                <input class="input" type="text" name="name" placeholder="الاسم">
+              </div>
+            </div>
+            <div class="field">
+              <label class="checkbox">
+                <input name="archived" id="archived" type="checkbox">
+                مؤرشف؟
+              </label>
+            </div>
+            <hr />
+            <div class="field">
+              <div class="select is-multiple">
+                <select multiple name="seasons" id="seasons">
+                  {{#seasons}}
+                    <option value={{id}}>{{name}}</option>
+                  {{/seasons}}
+                </select>
+              </div>
+            </div>
+            <div class="field is-grouped">
+              <div class="control">
+                <input class="button is-link" type="submit" value="إضافة" />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+
