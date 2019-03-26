@@ -12,11 +12,12 @@ module.exports = {
     });
   },
   new(req, res) {
-    res.render('users/new', {
-      title: "إضافة مستخدم جديد",
-      errors: req.flash()['errors'],
-    });
-  },
+    Association.findAll().then((associations) => {
+      res.render('users/new', {
+        title: "إضافة مستخدم جديد",
+        associations: associations,
+        errors: req.flash()['errors'],
+      });
     });
   },
 

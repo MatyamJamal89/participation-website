@@ -44,6 +44,7 @@ module.exports = function (passport, user) {
             password: generateHash(password),
             name: req.body.name,
             type: req.body.type,
+            AssociationId: req.body.association,
           };
 
           User.create(data).then(function (newUser, created) {
