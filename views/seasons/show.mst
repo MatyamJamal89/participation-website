@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+{{> partials/head }}
+
+<body>
+  <div class="container is-fluid">
+    <div class="columns is-gapless is-multiline">
+      <div class="column is-full">
+        {{> partials/header }}
+      </div>
+      <div class="column is-1">
+        {{> partials/nav }}
+      </div>
+      <div class="column content">
+        <div class="navbar-menu sub-navbar-menu">
+          <div class="navbar-start">
+            <h2 class="title">
+              {{season.name}}
+            </h2>
+          </div>
+
+          <div class="navbar-end">
+            <a class="button is-link" href="/associations/{{associationId}}">
+              العودة للرابطة
+            </a>
+          </div>
+        </div>
+        <div class="sub-content">
+          <table class="participants">
+            <th>الاسم</th>
+            <th>رقم الهاتف</th>
+            <th>البريد الالكتروني</th>
+            <th>تاريخ الميلاد</th>
+            <th>التخصّص</th>
+            <th>الرّابطة</th>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
