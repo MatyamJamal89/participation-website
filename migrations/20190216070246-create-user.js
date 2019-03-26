@@ -16,6 +16,9 @@ module.exports = {
         allowNull: true,
         type: Sequelize.STRING
       },
+      AssociationId: {
+        type: Sequelize.INTEGER
+      },
       password: {
         allowNull: false,
         type: Sequelize.STRING
