@@ -23,8 +23,10 @@ module.exports = (sequelize, DataTypes) => {
     },
     last_login: DataTypes.DATE
   }, {});
+
   User.associate = function (models) {
-    // associations can be defined here
+    User.belongsTo(models.Association);
   };
+
   return User;
 };
