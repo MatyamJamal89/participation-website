@@ -53,8 +53,8 @@
             <div class="field">
               <label class="label">الفئة</label>
               <div class="control">
-                <div class="select" name="type" id="type">
-                  <select >
+                <div class="select">
+                  <select name="role" id="role">
                     <option value="association">عضو رابطة</option>
                     <option value="management">إدارة</option>
                   </select>

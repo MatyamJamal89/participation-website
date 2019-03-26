@@ -43,7 +43,7 @@ module.exports = function (passport, user) {
             email: email,
             password: generateHash(password),
             name: req.body.name,
-            type: req.body.type,
+            role: req.body.role,
             AssociationId: req.body.association,
           };
 
