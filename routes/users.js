@@ -1,11 +1,11 @@
 const express = require('express');
-
 const router = express.Router();
-const usersController = require('../controllers').users;
 
 const User = require('../models').User;
 const passport = require('passport');
-require('../config/passport.js')(passport, User);
+require('../config/passport.js')(require('passport'), User);
+
+const usersController = require('../controllers').users;
 
 router.get('/', usersController.index);
 router.get('/new', usersController.new);
