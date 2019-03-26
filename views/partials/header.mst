@@ -11,8 +11,7 @@
   <div class="navbar-menu">
     <div class="navbar-end">
       <div class="navbar-item">
-        {{! TODO: Add logout functionality }}
-        <a class="logout">
+        <a class="logout" href="/users/signout">
           تسجيل الخروج
         </a>
       </div>
