@@ -39,7 +39,7 @@
               <tr>
                 <td>{{email}}</td>
                 <td>{{name}}</td>
-                <td>{{association}}</td>
+                <td>{{Association.name}}</td>
                 <td>{{role}}</td>
               </tr>
             {{/users}}

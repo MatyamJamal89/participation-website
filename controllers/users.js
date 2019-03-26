@@ -1,8 +1,13 @@
 const User = require('../models').User;
+const Association = require('../models').Association;
 
 module.exports = {
   index(req, res) {
-    User.findAll().then((users) => {
+    User.findAll({
+        include: [{
+          model: Association,
+        }]
+      }).then((users) => {
       console.log(users);
       res.render('users/index', {
         users: users,
