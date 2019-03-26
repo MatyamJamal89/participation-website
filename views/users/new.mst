@@ -25,7 +25,7 @@
               {{/errors}}
             </ul>
           </div>
-          <form id="add" name="add" method="post" action="/users/add">
+          <form id="add" name="add" method="post" action="/users/create">
             <div class="field">
               <label class="label">البريد الالكتروني</label>
               <div class="control">

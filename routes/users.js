@@ -11,7 +11,7 @@ router.get('/', usersController.index);
 router.get('/new', usersController.new);
 router.get('/signin', usersController.signin);
 
-router.post('/add', passport.authenticate('local-signup', {
+router.post('/create', passport.authenticate('local-signup', {
   successRedirect: '/users',
   failureRedirect: 'new'
 }));
